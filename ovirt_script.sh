@@ -1,5 +1,6 @@
 #!/bin/bash
 
+./NVIDIA-Linux-x86_64-418.66-vgpu-kvm.run --uninstall
 yum -y install openssh-devel elfutils-libelf-devel bc
 yum -y groupinstall "development tools"
 yum -y install ncurses-devel openssl-devel
