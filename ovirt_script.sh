@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ./NVIDIA-Linux-x86_64-418.66-vgpu-kvm.run --uninstall
+cp -f ./cpu-tune.py /usr/libexec/vdsm/hooks/before_vm_start/
 yum -y install openssh-devel elfutils-libelf-devel bc
 yum -y groupinstall "development tools"
 yum -y install ncurses-devel openssl-devel
